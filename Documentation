@@ -1,0 +1,148 @@
+Welcome to the No-Name-Ui-Library-By-GamingScripter wiki!
+
+Credits to GamingScript for this WONDERFUL UI Library
+
+Note: Not By me
+
+# Getting Loadstring
+
+MOST IMPORTANT
+
+
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mapple7777/UI-Librarys/main/UI-1/UI.lua"))()
+
+
+# Creating Window
+
+SECOND MOST IMPORTANT
+
+
+   local Window = Library:Create("Example","Game Name")
+
+# Creating Tabs
+
+Important
+
+
+    local Tab1 = Window:Tab("Example",true)
+
+
+# Creating Labels
+
+Labels
+
+   Tab1:Label("Test Label")
+
+
+# Creating Buttons 
+  
+Buttons
+
+  
+   Tab1:Button("Button",function() 
+  print("pressed btn") 
+end)
+
+# Creating Toggles
+
+Toggles 
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+ 
+  
+   Tab1:Toggle("Toggle",function(x) 
+  print(x)
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+# Creating Textboxes
+
+Textbox
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ Tab1:Textbox("Textbox","Enter Text",function(txt) 
+ print(txt) 
+end)
+
+
+
+
+
+# Creating Dropdowns
+
+Dropdown (Kinda Broken)
+ 
+ 
+
+
+
+
+
+
+
+
+    
+    Tab1:Dropdown("Dropdown",{"Option 1","Option 2","Option 3"},function(current)
+    print(current)
+end)
+
+
+
+
+
+
+
+# Creating Sliders
+
+
+Slider (Put lowest Number in 16, and highest number in 500)
+  
+  Tab1:Slider("Slider",16,500,function(s)
+  print(s)
+end)
+
+
+# Creating Keybinds
+
+KEYBIND (Put letter in "F")  
+   
+  Tab1:Keybind("Keybind",Enum.KeyCode.F,function()  
+   print("Pressed key")
+end)
+
+
+CREDITS TO GAMERSCRIPTER
